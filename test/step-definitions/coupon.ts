@@ -1,5 +1,6 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 import LoginPage from '../pageobjects/propshoptrader/login.page.ts';
 import LandingPage from '../pageobjects/propshoptrader/landing.page.ts';

@@ -8,5 +8,5 @@ Feature: Checkout with a coupon
 
     Examples:
       | product          | coupon     | expectedOutcome  |
-      | Audible Orderflow | SAVE10     | discount applied |
+      | Audible Orderflow | HWQS2JZ2   | discount applied |
       | Close Flip Algo  | INVALID123 | coupon rejected  |

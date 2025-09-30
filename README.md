@@ -28,3 +28,11 @@ Use the following command to execute the tests defined in your WebdriverIO confi
 npm run wdio
 ```
 Make sure your wdio.conf.ts is correctly configured to point to your specs and step definitions.
+
+---
+
+## 📦 Generate and launch allure reports
+
+```bash
+npm run allure:generate
+```

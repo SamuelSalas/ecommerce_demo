@@ -2,7 +2,7 @@ export const config: WebdriverIO.Config = {
     runner: 'local',
     tsConfigPath: './tsconfig.json',
     specs: [
-        './src/test/features/*.feature'
+        './test/features/*.feature'
     ],
     exclude: [
         // 'path/to/excluded/files'
@@ -20,9 +20,16 @@ export const config: WebdriverIO.Config = {
     //services: [],
     framework: 'cucumber',
     specFileRetries: 0,
-    reporters: ['spec'],
+    reporters: ['spec', 
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: false,
+            disableWebdriverScreenshotsReporting: false,
+            useCucumberStepReporter: true,
+        }]
+    ],
     cucumberOpts: {
-        require: ['./src/test/step-definitions/coupon.ts'],
+        require: ['./test/step-definitions/*.ts'],
         backtrace: false,
         requireModule: [],
         dryRun: false,
