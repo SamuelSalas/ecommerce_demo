@@ -15,10 +15,12 @@ A basic setup for running **WebdriverIO** end-to-end tests using the **Cucumber 
 ---
 
 ## 📁 Project Structure
+```bash
 ecommerce_demo/
 ├── wdio.conf.ts        # WebdriverIO configuration file (TypeScript)
 ├── package.json        # NPM package definition
 └── (your test specs)   # Add your Cucumber feature files and step definitions
+```
 
 ---
 
